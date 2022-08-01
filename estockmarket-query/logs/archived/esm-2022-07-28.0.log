@@ -1,0 +1,705 @@
+2022-07-28 00:04:15,911 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:09:15,918 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:14:15,929 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:19:15,934 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:24:15,950 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:29:15,966 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:34:15,981 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:39:15,992 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:44:15,997 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:49:16,007 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:54:16,022 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 00:59:16,037 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:04:16,050 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:09:16,069 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:14:16,084 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:19:16,092 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 22:29:18,324 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-4, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2022-07-28 22:29:18,313 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-6, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2022-07-28 22:29:18,313 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-5, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: session timed out without receiving a heartbeat response.isDisconnected: false. Rediscovery will be attempted.
+2022-07-28 22:29:18,556 INFO org.apache.kafka.clients.FetchSessionHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Error sending fetch request (sessionId=1627103273, epoch=12566) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2022-07-28 22:29:18,569 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2022-07-28 22:29:19,791 INFO org.apache.kafka.clients.FetchSessionHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Error sending fetch request (sessionId=109067328, epoch=12566) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2022-07-28 22:29:19,862 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:19,869 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:19,901 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Attempt to heartbeat with Generation{generationId=14, memberId='consumer-group_id-4-961dbbd9-d3db-4499-b6a3-b43ad5d5a07f', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-07-28 22:29:19,904 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:29:19,906 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Lost previously assigned partitions createStock-0
+2022-07-28 22:29:19,923 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions lost: [createStock-0]
+2022-07-28 22:29:19,924 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions revoked: [createStock-0]
+2022-07-28 22:29:19,926 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:20,061 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:20,242 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation Generation{generationId=16, memberId='consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4', protocol='range'}
+2022-07-28 22:29:20,245 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 16: {consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4=Assignment(partitions=[createStock-0])}
+2022-07-28 22:29:20,338 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully synced group in generation Generation{generationId=16, memberId='consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4', protocol='range'}
+2022-07-28 22:29:20,340 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createStock-0])
+2022-07-28 22:29:20,341 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: createStock-0
+2022-07-28 22:29:20,363 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition createStock-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:29:20,366 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions assigned: [createStock-0]
+2022-07-28 22:29:20,810 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:20,813 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-6, groupId=group_id] Member consumer-group_id-6-cc7e1dcf-e2ec-4f1d-bf9c-cc145e91f318 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483647 rack: null) due to consumer poll timeout has expired. This means the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time processing messages. You can address this either by increasing max.poll.interval.ms or by reducing the maximum size of batches returned in poll() with max.poll.records.
+2022-07-28 22:29:21,358 INFO org.apache.kafka.clients.FetchSessionHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Error sending fetch request (sessionId=1657808217, epoch=12567) to node 0:
+org.apache.kafka.common.errors.DisconnectException: null
+2022-07-28 22:29:21,359 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:29:21,360 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Lost previously assigned partitions removeCompany-0
+2022-07-28 22:29:21,361 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions lost: [removeCompany-0]
+2022-07-28 22:29:21,361 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions revoked: [removeCompany-0]
+2022-07-28 22:29:21,361 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:21,363 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,365 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,366 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,367 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,369 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,371 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,373 ERROR org.apache.kafka.clients.consumer.internals.AbstractCoordinator$LeaveGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] LeaveGroup request with Generation{generationId=14, memberId='consumer-group_id-6-cc7e1dcf-e2ec-4f1d-bf9c-cc145e91f318', protocol='range'} failed with error: The coordinator is not aware of this member.
+2022-07-28 22:29:21,374 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:29:21,384 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:21,396 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:7, serverValue:51}] to localhost:27017
+2022-07-28 22:29:21,397 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Attempt to heartbeat with Generation{generationId=14, memberId='consumer-group_id-5-4495539e-8d9d-4c9b-a63c-8c88b28fb60a', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-07-28 22:29:21,397 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=35295600}
+2022-07-28 22:29:21,397 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:29:21,398 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Lost previously assigned partitions createCompany-0
+2022-07-28 22:29:21,398 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions lost: [createCompany-0]
+2022-07-28 22:29:21,398 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions revoked: [createCompany-0]
+2022-07-28 22:29:21,398 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:21,402 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:23,253 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Attempt to heartbeat failed since group is rebalancing
+2022-07-28 22:29:23,259 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Revoke previously assigned partitions createStock-0
+2022-07-28 22:29:23,259 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions revoked: [createStock-0]
+2022-07-28 22:29:23,260 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:29:23,266 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Successfully joined group with generation Generation{generationId=17, memberId='consumer-group_id-6-983a4625-6b1d-427c-95d5-c0a24253c6aa', protocol='range'}
+2022-07-28 22:29:23,266 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation Generation{generationId=17, memberId='consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4', protocol='range'}
+2022-07-28 22:29:23,266 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Successfully joined group with generation Generation{generationId=17, memberId='consumer-group_id-5-0f1fec06-3783-4d8f-aae4-d1b708021c18', protocol='range'}
+2022-07-28 22:29:23,583 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 17: {consumer-group_id-5-0f1fec06-3783-4d8f-aae4-d1b708021c18=Assignment(partitions=[createCompany-0]), consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4=Assignment(partitions=[createStock-0]), consumer-group_id-6-983a4625-6b1d-427c-95d5-c0a24253c6aa=Assignment(partitions=[removeCompany-0])}
+2022-07-28 22:29:23,589 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully synced group in generation Generation{generationId=17, memberId='consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4', protocol='range'}
+2022-07-28 22:29:23,590 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Successfully synced group in generation Generation{generationId=17, memberId='consumer-group_id-6-983a4625-6b1d-427c-95d5-c0a24253c6aa', protocol='range'}
+2022-07-28 22:29:23,590 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createStock-0])
+2022-07-28 22:29:23,590 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Successfully synced group in generation Generation{generationId=17, memberId='consumer-group_id-5-0f1fec06-3783-4d8f-aae4-d1b708021c18', protocol='range'}
+2022-07-28 22:29:23,590 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: createStock-0
+2022-07-28 22:29:23,590 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Notifying assignor about the new Assignment(partitions=[removeCompany-0])
+2022-07-28 22:29:23,591 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createCompany-0])
+2022-07-28 22:29:23,591 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Adding newly assigned partitions: removeCompany-0
+2022-07-28 22:29:23,591 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Adding newly assigned partitions: createCompany-0
+2022-07-28 22:29:23,593 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Setting offset for partition createCompany-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:29:23,593 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition createStock-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:29:23,594 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Setting offset for partition removeCompany-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:29:23,594 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions assigned: [createStock-0]
+2022-07-28 22:29:23,594 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions assigned: [removeCompany-0]
+2022-07-28 22:29:23,594 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions assigned: [createCompany-0]
+2022-07-28 01:23:23,990 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2022-07-28 01:23:23,993 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Opened connection [connectionId{localValue:8, serverValue:53}] to localhost:27017
+2022-07-28 01:23:23,994 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='62e17e1f9327b97882dc47e0', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1508300}
+2022-07-28 01:24:15,533 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:29:15,545 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:32:08,475 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-4, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:32:08,475 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-6, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:32:08,475 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | group_id] [Consumer clientId=consumer-group_id-5, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:32:08,484 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 01:32:08,484 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 01:32:08,484 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 01:32:08,489 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:32:08,489 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:32:08,489 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Group coordinator localhost:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: coordinator unavailable.isDisconnected: true. Rediscovery will be attempted.
+2022-07-28 01:34:15,555 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 01:39:15,566 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 22:48:28,473 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:48:28,477 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Attempt to heartbeat with Generation{generationId=17, memberId='consumer-group_id-4-10412956-84e9-4eaf-9b6f-9b6cf55f56b4', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-07-28 22:48:28,478 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:48:28,478 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Lost previously assigned partitions createStock-0
+2022-07-28 22:48:28,478 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions lost: [createStock-0]
+2022-07-28 22:48:28,479 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions revoked: [createStock-0]
+2022-07-28 22:48:28,479 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:28,482 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:28,490 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation Generation{generationId=19, memberId='consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486', protocol='range'}
+2022-07-28 22:48:28,490 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 19: {consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486=Assignment(partitions=[createStock-0])}
+2022-07-28 22:48:28,498 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully synced group in generation Generation{generationId=19, memberId='consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486', protocol='range'}
+2022-07-28 22:48:28,499 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createStock-0])
+2022-07-28 22:48:28,499 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: createStock-0
+2022-07-28 22:48:28,524 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition createStock-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:48:28,524 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions assigned: [createStock-0]
+2022-07-28 22:48:28,868 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:48:28,868 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+2022-07-28 22:48:28,875 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Attempt to heartbeat with Generation{generationId=17, memberId='consumer-group_id-6-983a4625-6b1d-427c-95d5-c0a24253c6aa', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-07-28 22:48:28,876 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:48:28,876 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Lost previously assigned partitions removeCompany-0
+2022-07-28 22:48:28,877 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Attempt to heartbeat with Generation{generationId=17, memberId='consumer-group_id-5-0f1fec06-3783-4d8f-aae4-d1b708021c18', protocol='range'} and group instance id Optional.empty failed due to UNKNOWN_MEMBER_ID, resetting generation
+2022-07-28 22:48:28,877 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions lost: [removeCompany-0]
+2022-07-28 22:48:28,877 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions revoked: [removeCompany-0]
+2022-07-28 22:48:28,877 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Giving away all assigned partitions as lost since generation has been reset,indicating that consumer is no longer part of the group
+2022-07-28 22:48:28,877 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:28,877 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Lost previously assigned partitions createCompany-0
+2022-07-28 22:48:28,877 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions lost: [createCompany-0]
+2022-07-28 22:48:28,877 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions revoked: [createCompany-0]
+2022-07-28 22:48:28,877 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:28,878 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:28,879 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:31,494 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Attempt to heartbeat failed since group is rebalancing
+2022-07-28 22:48:31,494 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Revoke previously assigned partitions createStock-0
+2022-07-28 22:48:31,495 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions revoked: [createStock-0]
+2022-07-28 22:48:31,495 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] (Re-)joining group
+2022-07-28 22:48:31,498 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Successfully joined group with generation Generation{generationId=20, memberId='consumer-group_id-5-915c769f-9861-4f43-b86d-ed8250d26b4e', protocol='range'}
+2022-07-28 22:48:31,498 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Successfully joined group with generation Generation{generationId=20, memberId='consumer-group_id-6-f3e166f9-cd6a-4702-bbcc-5553ae01ff37', protocol='range'}
+2022-07-28 22:48:31,498 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$JoinGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully joined group with generation Generation{generationId=20, memberId='consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486', protocol='range'}
+2022-07-28 22:48:31,555 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Finished assignment for group at generation 20: {consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486=Assignment(partitions=[createStock-0]), consumer-group_id-5-915c769f-9861-4f43-b86d-ed8250d26b4e=Assignment(partitions=[createCompany-0]), consumer-group_id-6-f3e166f9-cd6a-4702-bbcc-5553ae01ff37=Assignment(partitions=[removeCompany-0])}
+2022-07-28 22:48:31,560 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Successfully synced group in generation Generation{generationId=20, memberId='consumer-group_id-5-915c769f-9861-4f43-b86d-ed8250d26b4e', protocol='range'}
+2022-07-28 22:48:31,560 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Successfully synced group in generation Generation{generationId=20, memberId='consumer-group_id-6-f3e166f9-cd6a-4702-bbcc-5553ae01ff37', protocol='range'}
+2022-07-28 22:48:31,560 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$SyncGroupResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Successfully synced group in generation Generation{generationId=20, memberId='consumer-group_id-4-65198c2b-d22b-4a60-9481-f4de40199486', protocol='range'}
+2022-07-28 22:48:31,561 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createCompany-0])
+2022-07-28 22:48:31,561 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Adding newly assigned partitions: createCompany-0
+2022-07-28 22:48:31,561 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Notifying assignor about the new Assignment(partitions=[createStock-0])
+2022-07-28 22:48:31,561 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Notifying assignor about the new Assignment(partitions=[removeCompany-0])
+2022-07-28 22:48:31,562 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Adding newly assigned partitions: removeCompany-0
+2022-07-28 22:48:31,562 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Adding newly assigned partitions: createStock-0
+2022-07-28 22:48:31,566 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-group_id-5, groupId=group_id] Setting offset for partition createCompany-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:48:31,566 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] [Consumer clientId=consumer-group_id-4, groupId=group_id] Setting offset for partition createStock-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:48:31,566 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] group_id: partitions assigned: [createCompany-0]
+2022-07-28 22:48:31,566 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] group_id: partitions assigned: [createStock-0]
+2022-07-28 22:48:31,566 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] [Consumer clientId=consumer-group_id-6, groupId=group_id] Setting offset for partition removeCompany-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 0 rack: null)], epoch=0}}
+2022-07-28 22:48:31,567 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] group_id: partitions assigned: [removeCompany-0]
+2022-07-28 22:52:13,908 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-07-28 22:53:58,272 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/} exception=I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-07-28 22:53:58,272 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/} exception=I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2022-07-28 22:53:58,274 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:53:58,274 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:54:02,388 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-07-28 22:54:02,388 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-07-28 22:54:02,389 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:54:02,390 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:54:02,402 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-07-28 22:54:02,402 ERROR com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-28 22:54:36,576 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-07-28 22:54:36,577 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:54:36,578 ERROR com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-28 22:54:36,580 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-07-28 22:54:36,582 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:54:36,583 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-07-28 22:55:10,777 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-07-28 22:55:10,778 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8090/eureka/apps/ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:55:10,778 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8090/eureka/}, exception=I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-07-28 22:55:10,778 ERROR com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2022-07-28 22:55:10,781 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8090/eureka/apps/delta": Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-07-28 22:55:10,783 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient_ESTOCKMARKET-QUERY/host.docker.internal:estockmarket-query:8481 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+

@@ -1,0 +1,910 @@
+2022-08-01 00:02:46,171 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 14208 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:02:46,177 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-08-01 00:02:46,180 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:02:46,180 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:02:46,239 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 00:02:46,239 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 00:02:48,240 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:02:48,348 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:02:48,749 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:02:49,632 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:02:49,646 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:02:49,647 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:02:49,648 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:02:49,856 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:02:49,857 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3617 ms
+2022-08-01 00:02:50,251 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:02:50,314 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-01 00:02:50,456 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 00:02:50,605 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 00:02:50,967 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 00:02:50,984 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:02:51,929 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:02:51,943 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:02:52,764 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:02:53,363 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:02:53,457 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:02:53,473 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commandApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+2022-08-01 00:02:53,480 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:02:53,485 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2022-08-01 00:02:53,513 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2022-08-01 00:02:53,518 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-08-01 00:02:53,545 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 00:02:53,578 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commandApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.estockmarket.command.EstockmarketCommandApplication.main(EstockmarketCommandApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at springfox.documentation.service.ApiInfo.<init>(ApiInfo.java:94)
+	at com.estockmarket.command.application.config.SwaggerConfig.metaInfo(SwaggerConfig.java:29)
+	at com.estockmarket.command.application.config.SwaggerConfig.commandApi(SwaggerConfig.java:24)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$86ae3a44.CGLIB$commandApi$0(<generated>)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$86ae3a44$$FastClassBySpringCGLIB$$9aa0474.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$86ae3a44.commandApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2022-08-01 00:04:05,026 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 4256 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:04:05,032 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:04:05,033 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:04:05,032 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-08-01 00:04:05,089 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 00:04:05,089 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 00:04:06,958 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:04:07,072 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 92 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:04:07,460 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:04:08,327 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:04:08,340 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:04:08,341 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:04:08,341 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:04:08,553 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:04:08,554 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3464 ms
+2022-08-01 00:04:08,914 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:04:08,980 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-01 00:04:09,123 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 00:04:09,257 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 00:04:09,607 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 00:04:09,624 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:04:10,503 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:04:10,521 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:04:11,363 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:04:11,994 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:04:12,084 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:04:12,304 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:04:12,942 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:04:13,025 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:04:13,136 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:04:13,177 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:04:13,182 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:04:13,212 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:04:13,213 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:04:13,213 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:04:13,213 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:04:13,214 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:04:13,214 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:04:13,214 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:04:13,569 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:04:13,573 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:04:13,577 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:04:13,583 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659292453582 with initial instances count: 1
+2022-08-01 00:04:13,586 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:04:13,587 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659292453587, current=UP, previous=STARTING]
+2022-08-01 00:04:13,590 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:04:13,590 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:04:13,622 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:04:13,624 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:04:13,658 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:04:13,745 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:04:13,746 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:04:13,751 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 4 ms
+2022-08-01 00:04:13,852 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:04:13,876 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:04:13,914 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:04:13,940 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 9.742 seconds (JVM running for 11.076)
+2022-08-01 00:09:13,230 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 00:14:13,236 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 00:19:13,240 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 00:21:17,653 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-1] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:21:17,653 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1659293477653, current=DOWN, previous=UP]
+2022-08-01 00:21:17,654 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:21:17,674 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:21:17,831 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:21:17,838 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2022-08-01 00:21:17,866 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2022-08-01 00:21:17,869 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2022-08-01 00:21:20,874 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Unregistering ...
+2022-08-01 00:21:20,889 INFO com.netflix.discovery.DiscoveryClient [Thread-1] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:21:20,896 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2022-08-01 00:21:21,241 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 4256 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:21:21,242 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:21:21,242 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:21:22,121 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:21:22,147 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:21:22,294 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0ce63664-4b91-355a-a44c-1beca8215c45
+2022-08-01 00:21:22,438 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:21:22,439 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:21:22,439 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:21:22,440 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:21:22,483 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:21:22,483 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1237 ms
+2022-08-01 00:21:22,599 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:21:22,609 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-08-01 00:21:22,642 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-08-01 00:21:22,643 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:21:22,712 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:21:22,713 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:21:22,946 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:21:23,289 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:21:23,330 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:23:03,164 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postsApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'postsApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	ApiInfoBuilder cannot be resolved to a type
+
+2022-08-01 00:23:03,168 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:23:03,169 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown initiated...
+2022-08-01 00:23:03,179 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown completed.
+2022-08-01 00:23:03,180 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-08-01 00:23:03,199 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 00:23:03,233 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'postsApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'postsApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	ApiInfoBuilder cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.estockmarket.command.EstockmarketCommandApplication.main(EstockmarketCommandApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'postsApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	ApiInfoBuilder cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	ApiInfoBuilder cannot be resolved to a type
+
+	at com.estockmarket.command.application.config.SwaggerConfig.apiInfo(SwaggerConfig.java:43)
+	at com.estockmarket.command.application.config.SwaggerConfig.postsApi(SwaggerConfig.java:35)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e.CGLIB$postsApi$0(<generated>)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e$$FastClassBySpringCGLIB$$818409f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e.postsApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2022-08-01 00:23:04,965 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 4256 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:23:04,965 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:23:04,965 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:23:05,775 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:23:05,801 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:23:05,956 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0ce63664-4b91-355a-a44c-1beca8215c45
+2022-08-01 00:23:06,087 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:23:06,088 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:23:06,089 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:23:06,089 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:23:06,132 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:23:06,132 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1162 ms
+2022-08-01 00:23:06,252 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:23:06,262 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2022-08-01 00:23:06,292 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2022-08-01 00:23:06,293 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:23:06,355 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:23:06,356 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:23:06,585 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:23:06,906 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:23:06,949 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:23:07,020 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:23:07,343 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:23:07,377 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:23:07,417 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:23:07,420 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:23:07,420 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:23:07,422 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:23:07,422 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:23:07,422 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:23:07,423 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:23:07,423 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:23:07,423 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:23:07,423 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:23:07,445 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:23:07,447 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:23:07,448 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:23:07,450 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659293587450 with initial instances count: 3
+2022-08-01 00:23:07,452 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:23:07,452 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659293587452, current=UP, previous=STARTING]
+2022-08-01 00:23:07,453 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:23:07,455 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:23:07,469 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:23:07,469 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:23:07,480 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:23:07,650 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:23:07,652 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:23:07,659 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:23:07,672 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 2.966 seconds (JVM running for 1144.808)
+2022-08-01 00:23:07,677 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-01 00:24:17,762 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8482-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:24:17,762 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:24:17,765 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Completed initialization in 2 ms
+2022-08-01 00:25:22,719 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-7] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:25:22,720 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-7] Saw local status change event StatusChangeEvent [timestamp=1659293722720, current=DOWN, previous=UP]
+2022-08-01 00:25:22,720 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:25:22,729 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:25:22,871 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:25:22,873 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-3 - Shutdown initiated...
+2022-08-01 00:25:22,898 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-3 - Shutdown completed.
+2022-08-01 00:25:22,900 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Shutting down DiscoveryClient ...
+2022-08-01 00:25:25,911 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Unregistering ...
+2022-08-01 00:25:25,926 INFO com.netflix.discovery.DiscoveryClient [Thread-7] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:25:25,931 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Completed shut down of DiscoveryClient
+2022-08-01 00:25:26,273 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 4256 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:25:26,273 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:25:26,273 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:25:27,036 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:25:27,061 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:25:27,199 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=0ce63664-4b91-355a-a44c-1beca8215c45
+2022-08-01 00:25:27,334 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:25:27,335 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:25:27,335 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:25:27,335 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:25:27,376 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:25:27,376 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1099 ms
+2022-08-01 00:25:27,484 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:25:27,494 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2022-08-01 00:25:27,524 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2022-08-01 00:25:27,525 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:25:27,585 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:25:27,586 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:25:27,792 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:25:28,118 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:25:28,159 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:25:28,229 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:25:28,541 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:25:28,571 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:25:28,604 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:25:28,607 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:25:28,607 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:25:28,608 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:25:28,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:25:28,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:25:28,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:25:28,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:25:28,609 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:25:28,610 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:25:28,630 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:25:28,632 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:25:28,633 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:25:28,634 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659293728634 with initial instances count: 4
+2022-08-01 00:25:28,637 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:25:28,637 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659293728637, current=UP, previous=STARTING]
+2022-08-01 00:25:28,638 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:25:28,640 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:25:28,643 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:25:28,644 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:25:28,654 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:25:28,824 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:25:28,826 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:25:28,832 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:25:28,844 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 2.805 seconds (JVM running for 1285.979)
+2022-08-01 00:25:28,848 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-01 00:25:29,956 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8482-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:25:29,957 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:25:29,960 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Completed initialization in 3 ms
+2022-08-01 00:27:04,009 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-18] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:27:04,010 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-18] Saw local status change event StatusChangeEvent [timestamp=1659293824010, current=DOWN, previous=UP]
+2022-08-01 00:27:04,011 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:27:04,019 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:27:04,163 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-18] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:27:04,164 INFO com.zaxxer.hikari.HikariDataSource [Thread-18] HikariPool-4 - Shutdown initiated...
+2022-08-01 00:27:04,190 INFO com.zaxxer.hikari.HikariDataSource [Thread-18] HikariPool-4 - Shutdown completed.
+2022-08-01 00:27:04,192 INFO com.netflix.discovery.DiscoveryClient [Thread-18] Shutting down DiscoveryClient ...
+2022-08-01 00:27:07,203 INFO com.netflix.discovery.DiscoveryClient [Thread-18] Unregistering ...
+2022-08-01 00:27:07,219 INFO com.netflix.discovery.DiscoveryClient [Thread-18] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:27:07,224 INFO com.netflix.discovery.DiscoveryClient [Thread-18] Completed shut down of DiscoveryClient
+2022-08-01 00:27:07,582 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 4256 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:27:07,583 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:27:07,583 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:27:08,371 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:27:08,399 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:27:08,535 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=15dabbd1-24c3-36db-8b5a-c6882bea6d2f
+2022-08-01 00:27:08,669 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:27:08,670 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:27:08,671 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:27:08,671 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:27:08,713 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:27:08,713 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1126 ms
+2022-08-01 00:27:08,831 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:27:08,842 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2022-08-01 00:27:08,872 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2022-08-01 00:27:08,873 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:27:08,934 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:27:08,935 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:27:09,144 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:27:09,470 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:27:09,505 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:33:39,173 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'userApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor ApiInfo(String, String, String, String, Contact, String, String) is undefined
+
+2022-08-01 00:33:39,177 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:33:39,177 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Shutdown initiated...
+2022-08-01 00:33:39,186 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Shutdown completed.
+2022-08-01 00:33:39,187 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-08-01 00:33:39,202 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 00:33:39,212 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'userApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor ApiInfo(String, String, String, String, Contact, String, String) is undefined
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.estockmarket.command.EstockmarketCommandApplication.main(EstockmarketCommandApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'userApi' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The constructor ApiInfo(String, String, String, String, Contact, String, String) is undefined
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The constructor ApiInfo(String, String, String, String, Contact, String, String) is undefined
+
+	at com.estockmarket.command.application.config.SwaggerConfig.metaInfo(SwaggerConfig.java:49)
+	at com.estockmarket.command.application.config.SwaggerConfig.userApi(SwaggerConfig.java:45)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e.CGLIB$userApi$0(<generated>)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e$$FastClassBySpringCGLIB$$818409f2.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$3568605e.userApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2022-08-01 00:34:02,498 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 18176 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:34:02,505 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:34:02,505 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:34:02,505 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-08-01 00:34:02,562 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 00:34:02,563 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 00:34:04,424 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:34:04,538 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:34:04,936 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=dfe8011c-80c5-3ce0-b24d-989bdc92c370
+2022-08-01 00:34:05,772 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:34:05,786 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:34:05,788 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:34:05,788 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:34:05,989 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:34:05,990 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3426 ms
+2022-08-01 00:34:06,355 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:34:06,415 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-01 00:34:06,556 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 00:34:06,683 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 00:34:07,031 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 00:34:07,049 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:34:07,890 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:34:07,901 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:34:08,697 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:34:09,301 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:34:09,389 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:34:09,589 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:34:10,231 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:34:10,316 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:34:10,428 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:34:10,467 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:34:10,472 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:34:10,501 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:34:10,501 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:34:10,501 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:34:10,502 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:34:10,502 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:34:10,502 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:34:10,502 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:34:10,715 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:34:10,716 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:34:10,719 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 2 ms
+2022-08-01 00:34:10,822 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:34:10,826 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:34:10,829 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:34:10,836 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659294250834 with initial instances count: 3
+2022-08-01 00:34:10,839 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:34:10,840 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659294250839, current=UP, previous=STARTING]
+2022-08-01 00:34:10,842 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:34:10,843 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:34:10,872 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:34:10,873 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:34:10,883 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:34:11,092 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:34:11,114 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:34:11,156 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:34:11,309 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2022-08-01 00:34:11,311 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2022-08-01 00:34:11,313 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2022-08-01 00:34:11,343 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 9.69 seconds (JVM running for 11.101)
+2022-08-01 00:34:57,647 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-1] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:34:57,652 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1659294297652, current=DOWN, previous=UP]
+2022-08-01 00:34:57,655 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:34:57,671 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:34:57,829 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:34:57,834 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2022-08-01 00:34:57,863 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2022-08-01 00:34:57,866 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2022-08-01 00:35:00,872 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Unregistering ...
+2022-08-01 00:35:00,887 INFO com.netflix.discovery.DiscoveryClient [Thread-1] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:35:00,894 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2022-08-01 00:35:01,235 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 18176 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:35:01,235 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:35:01,235 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:35:02,061 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:35:02,095 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:35:02,244 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=dfe8011c-80c5-3ce0-b24d-989bdc92c370
+2022-08-01 00:35:02,399 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:35:02,401 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:35:02,401 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:35:02,401 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:35:02,444 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:35:02,444 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1203 ms
+2022-08-01 00:35:02,560 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:35:02,570 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-08-01 00:35:02,604 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-08-01 00:35:02,605 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:35:02,681 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:35:02,681 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:35:02,916 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:35:03,252 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:35:03,288 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:35:03,358 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:35:03,694 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:35:03,724 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:35:03,765 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:35:03,768 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:35:03,768 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:35:03,770 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:35:03,770 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:35:03,770 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:35:03,771 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:35:03,771 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:35:03,771 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:35:03,771 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:35:03,796 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:35:03,798 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:35:03,799 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:35:03,800 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659294303800 with initial instances count: 4
+2022-08-01 00:35:03,802 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:35:03,803 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659294303803, current=UP, previous=STARTING]
+2022-08-01 00:35:03,803 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:35:03,805 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:35:03,808 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:35:03,809 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:35:03,820 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:35:04,005 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:35:04,007 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:35:04,015 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:35:04,053 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2022-08-01 00:35:04,055 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2022-08-01 00:35:04,056 INFO springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2022-08-01 00:35:04,081 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 3.098 seconds (JVM running for 63.839)
+2022-08-01 00:35:04,087 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-01 00:35:12,611 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8482-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:35:12,612 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:35:12,614 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Completed initialization in 2 ms
+2022-08-01 00:35:31,570 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-7] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:35:31,571 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-7] Saw local status change event StatusChangeEvent [timestamp=1659294331571, current=DOWN, previous=UP]
+2022-08-01 00:35:31,572 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:35:31,594 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:35:31,726 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:35:31,728 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2022-08-01 00:35:31,760 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2022-08-01 00:35:31,762 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Shutting down DiscoveryClient ...
+2022-08-01 00:35:34,779 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor shutting down, can't accept the task
+2022-08-01 00:35:34,781 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Unregistering ...
+2022-08-01 00:35:34,785 INFO com.netflix.discovery.DiscoveryClient [Thread-7] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:35:34,790 INFO com.netflix.discovery.DiscoveryClient [Thread-7] Completed shut down of DiscoveryClient
+2022-08-01 00:35:35,142 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 18176 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:35:35,143 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:35:35,143 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:35:35,992 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:35:36,018 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:35:36,153 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:35:36,302 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:35:36,303 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:35:36,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:35:36,304 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:35:36,348 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:35:36,348 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1199 ms
+2022-08-01 00:35:36,465 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:35:36,479 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2022-08-01 00:35:36,512 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2022-08-01 00:35:36,513 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:35:36,575 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:35:36,575 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:35:36,795 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:35:37,132 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:35:37,172 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:35:37,184 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commandApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+2022-08-01 00:35:37,186 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:35:37,187 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2022-08-01 00:35:37,212 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2022-08-01 00:35:37,215 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2022-08-01 00:35:37,235 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 00:35:37,270 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commandApi' defined in class path resource [com/estockmarket/command/application/config/SwaggerConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.estockmarket.command.EstockmarketCommandApplication.main(EstockmarketCommandApplication.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [springfox.documentation.spring.web.plugins.Docket]: Factory method 'commandApi' threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 24 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at springfox.documentation.service.ApiInfo.<init>(ApiInfo.java:94)
+	at com.estockmarket.command.application.config.SwaggerConfig.metaInfo(SwaggerConfig.java:32)
+	at com.estockmarket.command.application.config.SwaggerConfig.commandApi(SwaggerConfig.java:28)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$28794585.CGLIB$commandApi$0(<generated>)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$28794585$$FastClassBySpringCGLIB$$ba17a92a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.estockmarket.command.application.config.SwaggerConfig$$EnhancerBySpringCGLIB$$28794585.commandApi(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+2022-08-01 00:36:32,328 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 18176 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:36:32,329 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:36:32,329 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:36:33,136 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:36:33,164 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:36:33,307 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:36:33,452 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:36:33,454 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:36:33,454 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:36:33,455 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:36:33,502 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:36:33,502 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1167 ms
+2022-08-01 00:36:33,635 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:36:33,648 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2022-08-01 00:36:33,682 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2022-08-01 00:36:33,683 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:36:33,759 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:36:33,760 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:36:33,978 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:36:34,321 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:36:34,358 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:36:34,429 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:36:34,750 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:36:34,782 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:36:34,819 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:36:34,822 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:36:34,823 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:36:34,824 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:36:34,825 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:36:34,825 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:36:34,825 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:36:34,825 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:36:34,826 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:36:34,826 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:36:34,854 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:36:34,856 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:36:34,857 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:36:34,859 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659294394859 with initial instances count: 3
+2022-08-01 00:36:34,861 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:36:34,861 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659294394861, current=UP, previous=STARTING]
+2022-08-01 00:36:34,862 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:36:34,864 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:36:34,868 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:36:34,869 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:36:34,881 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:36:35,053 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:36:35,054 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:36:35,060 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:36:35,093 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 3.021 seconds (JVM running for 154.85)
+2022-08-01 00:36:35,098 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-01 00:36:45,056 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 2704 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:36:45,063 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:36:45,063 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:36:45,065 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-08-01 00:36:45,120 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 00:36:45,120 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 00:36:47,094 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:36:47,194 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 88 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:36:47,583 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:36:48,424 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:36:48,435 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:36:48,436 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:36:48,437 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:36:48,653 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:36:48,653 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3532 ms
+2022-08-01 00:36:49,032 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:36:49,095 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-01 00:36:49,244 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 00:36:49,373 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 00:36:49,721 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 00:36:49,738 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:36:50,633 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:36:50,646 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:36:51,454 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:36:52,069 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:36:52,161 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:36:52,374 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:36:53,010 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:36:53,097 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:36:53,215 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:36:53,257 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:36:53,263 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:36:53,274 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:36:53,274 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:36:53,277 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 3 ms
+2022-08-01 00:36:53,296 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:36:53,297 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:36:53,297 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:36:53,298 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:36:53,298 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:36:53,298 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:36:53,299 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:36:53,595 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:36:53,599 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:36:53,602 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:36:53,608 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659294413607 with initial instances count: 3
+2022-08-01 00:36:53,611 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:36:53,612 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659294413612, current=UP, previous=STARTING]
+2022-08-01 00:36:53,615 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:36:53,615 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:36:53,642 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:36:53,643 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:36:53,654 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:36:53,859 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:36:53,880 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:36:53,916 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:36:54,060 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 9.836 seconds (JVM running for 11.219)
+2022-08-01 00:37:37,235 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-1] Unregistering application ESTOCKMARKET-COMMAND with eureka with status DOWN
+2022-08-01 00:37:37,236 INFO com.netflix.discovery.DiscoveryClient$3 [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1659294457236, current=DOWN, previous=UP]
+2022-08-01 00:37:37,237 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:37:37,253 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:37:37,404 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:37:37,428 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown initiated...
+2022-08-01 00:37:37,465 INFO com.zaxxer.hikari.HikariDataSource [Thread-1] HikariPool-1 - Shutdown completed.
+2022-08-01 00:37:37,468 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2022-08-01 00:37:40,481 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Unregistering ...
+2022-08-01 00:37:40,496 INFO com.netflix.discovery.DiscoveryClient [Thread-1] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - deregister  status: 200
+2022-08-01 00:37:40,502 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2022-08-01 00:37:40,847 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 2704 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 00:37:40,847 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 00:37:40,847 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 00:37:41,702 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 00:37:41,729 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2022-08-01 00:37:41,869 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 00:37:42,022 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 00:37:42,023 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:37:42,024 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 00:37:42,024 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 00:37:42,126 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 00:37:42,127 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1274 ms
+2022-08-01 00:37:42,250 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 00:37:42,270 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-08-01 00:37:42,313 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-08-01 00:37:42,314 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 00:37:42,408 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 00:37:42,409 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 00:37:42,630 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 00:37:42,955 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 00:37:42,990 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 00:37:43,066 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 00:37:43,407 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 00:37:43,440 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 00:37:43,483 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 00:37:43,486 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 00:37:43,487 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 00:37:43,488 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 00:37:43,489 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 00:37:43,489 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 00:37:43,489 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 00:37:43,489 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 00:37:43,489 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 00:37:43,490 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 00:37:43,514 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 00:37:43,516 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 00:37:43,517 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 00:37:43,518 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659294463518 with initial instances count: 4
+2022-08-01 00:37:43,520 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 00:37:43,521 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659294463521, current=UP, previous=STARTING]
+2022-08-01 00:37:43,521 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 00:37:43,523 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 00:37:43,526 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 00:37:43,527 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 00:37:43,537 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 00:37:43,709 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 00:37:43,711 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 00:37:43,717 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 00:37:43,750 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 3.164 seconds (JVM running for 60.909)
+2022-08-01 00:37:43,754 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-08-01 00:37:55,492 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8482-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 00:37:55,492 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 00:37:55,496 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8482-exec-1] Completed initialization in 3 ms
+2022-08-01 00:42:43,500 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 00:47:43,501 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 00:52:43,508 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 13:46:11,481 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting EstockmarketCommandApplication using Java 11.0.12 on ctsjava129 with PID 22008 (C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command\target\classes started by cogjava201 in C:\Users\cogjava201\eStock_Market_Source_Code\HackFSE2_eStock_Market\estockmarket-command)
+2022-08-01 13:46:11,482 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2022-08-01 13:46:11,491 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.3, Spring v5.3.9
+2022-08-01 13:46:11,491 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-08-01 13:46:11,572 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-01 13:46:11,572 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-01 13:46:15,305 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-01 13:46:15,481 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 156 ms. Found 2 JPA repository interfaces.
+2022-08-01 13:46:16,436 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=6465439f-f42b-3a0e-954b-e9ca56f88e33
+2022-08-01 13:46:18,119 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8482 (http)
+2022-08-01 13:46:18,177 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8482"]
+2022-08-01 13:46:18,178 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-08-01 13:46:18,179 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-08-01 13:46:18,538 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-08-01 13:46:18,538 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6965 ms
+2022-08-01 13:46:19,097 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-01 13:46:19,274 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-08-01 13:46:19,547 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-01 13:46:19,767 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-08-01 13:46:20,668 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-08-01 13:46:20,700 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-08-01 13:46:22,158 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-01 13:46:22,175 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-01 13:46:23,372 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-01 13:46:24,270 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 3 endpoint(s) beneath base path '/actuator'
+2022-08-01 13:46:24,410 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 13:46:24,741 WARN org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2022-08-01 13:46:25,692 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [restartedMain] Eureka HTTP Client uses RestTemplate.
+2022-08-01 13:46:25,833 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [restartedMain] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-01 13:46:25,996 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2022-08-01 13:46:26,071 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2022-08-01 13:46:26,078 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2022-08-01 13:46:26,126 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Disable delta property : false
+2022-08-01 13:46:26,127 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2022-08-01 13:46:26,128 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Force full registry fetch : false
+2022-08-01 13:46:26,128 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application is null : false
+2022-08-01 13:46:26,128 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2022-08-01 13:46:26,129 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Application version is -1: true
+2022-08-01 13:46:26,129 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2022-08-01 13:46:26,642 INFO com.netflix.discovery.DiscoveryClient [restartedMain] The response status is 200
+2022-08-01 13:46:26,648 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2022-08-01 13:46:26,653 INFO com.netflix.discovery.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-01 13:46:26,665 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 13:46:26,666 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-08-01 13:46:26,666 INFO com.netflix.discovery.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1659341786665 with initial instances count: 2
+2022-08-01 13:46:26,669 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 3 ms
+2022-08-01 13:46:26,671 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [restartedMain] Registering application ESTOCKMARKET-COMMAND with eureka with status UP
+2022-08-01 13:46:26,672 INFO com.netflix.discovery.DiscoveryClient$3 [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1659341786672, current=UP, previous=STARTING]
+2022-08-01 13:46:26,676 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8482"]
+2022-08-01 13:46:26,679 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482: registering service...
+2022-08-01 13:46:26,718 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8482 (http) with context path ''
+2022-08-01 13:46:26,720 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [restartedMain] Updating port to 8482
+2022-08-01 13:46:26,738 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ESTOCKMARKET-COMMAND/host.docker.internal:estockmarket-command:8482 - registration status: 204
+2022-08-01 13:46:27,110 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2022-08-01 13:46:27,143 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2022-08-01 13:46:27,202 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2022-08-01 13:46:27,440 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started EstockmarketCommandApplication in 17.374 seconds (JVM running for 20.618)
+2022-08-01 13:51:26,136 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 13:56:26,148 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:01:32,368 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:06:34,367 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:11:34,410 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:16:34,331 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:21:34,136 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:26:34,141 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:31:34,143 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:36:34,140 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:41:34,151 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:46:34,160 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:51:34,156 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 14:56:34,155 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 15:01:34,168 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 15:06:34,177 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 22:40:10,293 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-08-01 22:45:10,311 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

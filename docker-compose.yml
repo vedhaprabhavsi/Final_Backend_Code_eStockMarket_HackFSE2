@@ -1,0 +1,72 @@
+version: "3"
+services:
+  zookeeper:
+    image: bitnami/zookeeper
+    restart: always
+    ports:
+      - '2181:2181'
+    volumes:
+      - 'zookeeper_data:/bitnami'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: bitnami/kafka
+    ports:
+      - '9092:9092'
+    restart: always
+    volumes:
+      - 'kafka_data:/bitnami'
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
+    depends_on:
+      - zookeeper
+  init-kafka:
+    image: confluentinc/cp-kafka:6.1.1
+    depends_on:
+      - kafka
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "
+      # blocks until kafka is reachable
+      kafka-topics --bootstrap-server kafka:29092 --list
+
+      echo -e 'Creating kafka topics'
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic createUser --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic createCompany --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic removeCompany --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic createStock --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic updateStock --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:29094 --create --if-not-exists --topic removeStock --replication-factor 1 --partitions 1
+
+      echo -e 'Successfully created the following topics:'
+      kafka-topics --bootstrap-server kafka:29094 --list
+      "
+  mysql-service:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - MYSQL_DATABASE:estockmarketdb
+      - MYSQL_USER:root
+      - MYSQL_PASSWORD:pass@word1
+      - MYSQL_ROOT_PASSWORD:pass@word1
+      - MYSQL_TCP_PORT:'3306'
+    ports:
+      - '3307:3306'
+    expose:
+      - '3306'   
+  mongo-service:
+    image: mongo
+    command: mongod --port 27017
+    ports:
+      - 27017:27017
+    #environment:
+      #MONGO_INITDB_ROOT_USERNAME: root
+      #MONGO_INITDB_ROOT_PASSWORD: root
+volumes:
+    zookeeper_data:
+        driver: local
+    kafka_data:
+        driver: local       
